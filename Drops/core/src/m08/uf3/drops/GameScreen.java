@@ -10,9 +10,12 @@ import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.math.MathUtils;
 import com.badlogic.gdx.math.Rectangle;
 import com.badlogic.gdx.math.Vector3;
+import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.utils.Array;
 import com.badlogic.gdx.utils.ScreenUtils;
 import com.badlogic.gdx.utils.TimeUtils;
+
+import org.graalvm.compiler.phases.common.NodeCounterPhase;
 
 import java.util.Iterator;
 
@@ -28,6 +31,8 @@ public class GameScreen implements Screen {
     Array<Rectangle> raindrops;
     long lastDropTime;
     int dropsGathered;
+    //private Stage stage;
+    //private Bucket bucket;
 
     public GameScreen(final Drops game) {
         this.game = game;
